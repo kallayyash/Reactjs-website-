@@ -9,7 +9,8 @@ import UserInputs from "./../../components/fields/userInputs";
 import Checkbox from "./../../components/fields/checkbox";
 import Dropdown from "./../../components/fields/dropDown";
 import RadioButton from "./../../components/fields/radioButton";
-import TextArea from "./../../components/fields/textArea"
+import TextArea from "./../../components/fields/textArea";
+import Footer from './../../components/footer/footer';
 
 class LandingPage extends Component {
     constructor(props) {
@@ -68,6 +69,7 @@ class LandingPage extends Component {
     render() {
       return (
           <div>
+          
             <Logo />
               <NavMenu style={{display: 'inline-block'}}>
                   <NavItem path="/login">Merchant Login</NavItem>
@@ -79,6 +81,11 @@ class LandingPage extends Component {
                   <Button onClick={this.loginMerchant} buttonName="Merchant Login" />
                   <Button onClick={this.loginAdmin} buttonName="Admin Login" />
                 
+              </div>
+
+              <div>
+
+                  <Footer />
               </div>
           </div>
       );
