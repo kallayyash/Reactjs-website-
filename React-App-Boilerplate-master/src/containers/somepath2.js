@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import Button from './../components/buttons/Button'
-class somepath1 extends Component{
+class somepath2 extends Component{
 
     goBack =()=>{
         {this.props.history.push("/");}
@@ -9,7 +9,7 @@ class somepath1 extends Component{
 
     render(){
         return(
-            <div style={{textAlign:"center",color:"#18b318",fontFamily:"sans-serif",fontSize:"25px", border: "2px solid #1d1da0fa",lineHeight : "1.5",width:"317px",  margin: "144px auto",padding:"20px"}}>
+            <div style={{textAlign:"center",color:"red",fontFamily:"sans-serif",fontSize:"25px", border: "2px solid #1d1da0fa",lineHeight : "1.5",width:"317px",  margin: "144px auto",padding:"20px"}}>
                   Congratulations <br/>
                   Enrollment <br/>
                   update is complete.
@@ -28,4 +28,4 @@ const mapStateToDispatch = Dispatch =>({
 
 });
 
-export default connect (mapStateToProps,mapStateToDispatch)(somepath1);
+export default connect (mapStateToProps,mapStateToDispatch)(somepath2);
