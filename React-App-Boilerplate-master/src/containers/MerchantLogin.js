@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+
 import Footer from './../components/footer/footer';
 
 class MerchantLogin extends Component {
@@ -23,8 +24,8 @@ class MerchantLogin extends Component {
     render() {
       return (
           <div>
-           
-          
+
+
             <h5 style ={step}>Step 3 of 3</h5>
 
             <h2 style ={funds}>Funds Advance Agreement</h2>
@@ -43,6 +44,7 @@ class MerchantLogin extends Component {
             </div>
  <br />
 
+
  <div style ={chk} >
 
              <div style={{float : "left",    marginLeft: "26%"}}>
@@ -58,7 +60,7 @@ class MerchantLogin extends Component {
 
               <Footer />
   </div>
-           
+      
 </div>
       );
     }
@@ -84,6 +86,7 @@ const terms ={
   width: "50%",//"500px",
   overflow: "scroll",
   marginRight : "20%",
+
   border : "outset",//inset,solid 1px black,
 
   }
@@ -112,6 +115,7 @@ const terms ={
     borderRadius: "25px",
     padding: "10px 18px",
   //  marginLeft: "297px"
+
   }
 const mapStateToProps = state => ({
 
